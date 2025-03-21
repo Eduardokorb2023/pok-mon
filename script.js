@@ -83,6 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Mudar a cor de fundo
   mudaCorFundoBotao.addEventListener('click', function() {
-    document.body.style.backgroundColor = document.body.style.backgroundColor === 'lightblue' ? '' : 'lightblue';
+    document.body.style.backgroundColor = document.body.style.backgroundColor === 'black' ? '' : 'lightblue';
   });
 });
