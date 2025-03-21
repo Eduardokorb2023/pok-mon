@@ -232,3 +232,9 @@ body {
     right:20px;
     z-index: 1000;
 }
+.opcoes-acessibilidade button{
+  margin-bottom: 5px;
+}
+.apresenta-lista{
+  display: none;
+}
