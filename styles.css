@@ -217,7 +217,7 @@ body {
 }
 
   .rotacao-botao {
-    transform: rotate(-90deg);
+    transform: rotate(180deg);
     transform-origin: right center;
   }
   
