@@ -216,10 +216,10 @@ body {
     flex-direction: column;
 }
 
-  .rotacao-botao {
-    transform: rotate(-180deg);
-    transform-origin: right rotate(180deg);
-  }
+.rotacao-botao{
+  transform: rotate(-90deg);
+  transform-origin: right center;
+}
   
   .escondido {
     display: none;
