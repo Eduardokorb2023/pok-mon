@@ -204,14 +204,25 @@ body {
   }
   
   #opcoes-acessibilidade.apresenta-lista {
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
     display: block;
   }
   
   .rotacao-botao {
-    transform: rotate(180deg);
+    transform: rotate(-90deg);
+    transform-origin: right center;
   }
   
   .escondido {
     display: none;
   }
   
+
+  .menu-acessibilidade{
+    position: fixed;
+    top:2rem;
+    right:20px;
+    z-index: 1000;
+}
