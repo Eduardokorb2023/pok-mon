@@ -50,9 +50,7 @@ body {
     font-family: 'Montserrat';
 }
 
-header {
-    background-color: #ffffff;
-}
+
 
 
 section {
@@ -79,13 +77,7 @@ section {
 }
 
 /* posicionamento para a imagem à direita */
-.img-inicio {
-    position: absolute;
-    right: 0;
-    top: 18rem;
-    width: 45rem;
-    height: auto;
-}
+
 
 
 .esquerda-conteudo {
@@ -112,28 +104,18 @@ section {
     text-shadow: -5px 5px var(--laranja-claro);
 }
 
-
-#tropicalia {
-    position: relative;
-    padding-top: 5rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    background: url('cz.jpg') top right no-repeat,
-            url('pi.jpg') bottom left no-repeat,
-            url('v.jpg') bottom right no-repeat;
-
-    background-size: 180px 180px;
-    /* Ajuste o tamanho conforme necessário */
+.poke-img {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
 }
+.cz { background-image: url('cz.jpg'); }
+.pi { background-image: url('pi.jpg'); }
+.v { background-image: url('v.jpg'); }
 
-#tropicalia .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    /* Garante que o conteúdo fica acima das imagens do background */
-}
+
 
 
 h2 {
@@ -195,7 +177,7 @@ h2 {
   }
   
   /* Estilos básicos */
-body {
+  body {
     font-size: 1rem;
   }
   
@@ -204,35 +186,34 @@ body {
   }
   
   #opcoes-acessibilidade.apresenta-lista {
-    margin-top:10px;
-    display: flex;
+    margin-top: 10px;
+    display: flex; /* Mantém o display como flex */
     flex-direction: column;
-    display: block;
   }
   
-  .opcoes-acessibilidade{
-    margin-top:10px;
+  .opcoes-acessibilidade {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
-}
-
-.rotacao-botao{
-  transform: rotate(-90deg);
-  transform-origin: right center;
-}
+  }
   
- 
+  .rotacao-botao {
+    transform: rotate(-90deg);
+    transform-origin: right center;
+  }
   
-
-  .menu-acessibilidade{
+  .menu-acessibilidade {
     position: fixed;
-    top:2rem;
-    right:20px;
+    top: 2rem;
+    right: 20px;
     z-index: 1000;
-}
-.opcoes-acessibilidade button{
-  margin-bottom: 5px;
-}
-.apresenta-lista{
-  display: none;
-}
+  }
+  
+  .opcoes-acessibilidade button {
+    margin-bottom: 5px;
+  }
+  
+  .apresenta-lista {
+    display: none;
+  }
+  

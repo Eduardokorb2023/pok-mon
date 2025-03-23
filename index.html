@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <title>Tropicália</title>
+    <title>Pokémon</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -18,9 +18,11 @@
     <div id="acessibilidade" class="menu-acessibilidade">
   <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao">Acessibilidade</button>
   <div id="opcoes-acessibilidade" >
-    <button id="aumentar-fonte" class="btn btn-primary fw-bold" >+Fonte</button>
-    <button id="diminuir-fonte" class="btn btn-primary fw-bold" >-Fonte</button>
-    <button id="mudar-fundo" class="btn btn-primary fw-bold" >Mudar Cor de Fundo</button>
+    <button id="aumentar-fonte" class="btn btn-primary fw-bold"  aria-label="Aumentar
+    o tamanho da fonte" >+Fonte</button>
+    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir
+    o tamanho da fonte" aria-label="mudar a cor do site">-Fonte</button>
+    <button id="mudar-fundo" class="btn btn-primary fw-bold" ><i class="bi bi-shadows"></i></button>
 </div>
   </div>
 
@@ -40,7 +42,7 @@
             
             <ul class="nav mt-5">
                 <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#O que é pokémon">o que é</a></li>
+                <li class="nav-item"><a class="nav-link" href="#poké">o que é</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
             </ul>  
               <div id="acessibilidade">
@@ -58,24 +60,46 @@
                 <div class="esquerda-conteudo">
                     <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
                   
-                    <a href="#tropicalia"
+                    <a href="#poké"
                         class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
                         conhecer!</a>
                 </div>
-
+                
             </div>
+            
         </section>
 
-        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+        <section id="poké" class="my-5 pt-6 secao-poké" tabindex="0">
             <div class="container d-flex align-items-center ">
                 
                   <div class="col-5 texte" id="texto" >
 
-                    <h2>O que é pokémon</h2>
-                    <p class="p-2">pokémon é uma franquia que tem diversos produtos, entre esses produtos tem jogos, séries, itens colecionaveis, entre outras coisas.
-                        essa franquia é extremamente grande, e dona dessa franquia é a"Pokémon Company" e a "Nintendo."
-                        A franquia Pokémon é uma das mais lucrativas do entretenimento, com um faturamento estimado de quase US$ 100 bilhões. </p>
-                
+       
+
+
+                    <main class="container my-5">
+                      <section id="poké" class="my-5 pt-6 secao-poké">
+                          <div class="container d-flex flex-column align-items-center text-center position-relative">
+                              <div class="poke-img cz position-absolute" style="top: -110px; right: -500px;;" 
+                                  alt="Screenshot do jogo pokemon go, mostrando a tela de captura" 
+                                  title="Screenshot tirado por [eduardo]. Uso próprio. Não é uma imagem oficial." loading="lazy"></div>
+                              <h2 class="text-danger fw-bold" style="margin-left: auto; margin-right: -325px;">O que é Pokémon?</h2>
+                              <p class="p-2 w-75" style="margin-left: auto; margin-right: -300px;">
+                                  Pokémon é uma franquia que tem diversos produtos, entre esses produtos estão jogos, séries, itens colecionáveis, entre outras coisas. 
+                                  Essa franquia é extremamente grande, e a dona dessa franquia é a "Pokémon Company" e a "Nintendo." 
+                                  A franquia Pokémon é uma das mais lucrativas do entretenimento, com um faturamento estimado de quase US$ 100 bilhões.
+                                  funte: wikipedia <a href="https://pt.wikipedia.org/wiki/Pok%C3%A9mon#:~:text=A%20Pok%C3%A9mon%20USA%20Inc.,d%C3%B3lares%20ao%20redor%20do%20mundo%20." target="_blank">ver site</a>
+                              <div class="d-flex justify-content-center position-relative w-100">
+                                  <div class="poke-img pi position-absolute" style="bottom: -100px; left: 200px;" 
+                                      alt="Screenshot do jogo pokemon go, mostrando a tela de captura" 
+                                      title="Screenshot tirado por [eduardo]. Uso próprio. Não é uma imagem oficial." loading="lazy"></div>
+                                  <div class="poke-img v position-absolute" style="bottom: -100px; right: -500px;" 
+                                      alt="Screenshot do jogo pokemon go, mostrando a tela de captura" 
+                                      title="Screenshot tirado por [eduardo]. Uso próprio. Não é uma imagem oficial." loading="lazy"></div>
+                              </div>
+                          </div>
+                      </section>
+                  </main>
                         
                     </div>
             </div>
@@ -88,67 +112,111 @@
             
         </section>
 
-        <section id="exemplos">
+        <section id="exemplos" tabindex="0">
             <h2 class="text-center pt-5">exemplos de jogos:</h2>
             <div class="container p-3 mt-3 fundo-exemplos">
-
-                <div class="row justify-content-md-center">
-                    <div class="col-md-4">
-                        <img src="go.png"
-                      alt="exemplo" title="Pokémon GO logo - CC0 Domínio Público / Nintendo Vetor" 
-                          
-                            class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="fire.png" class="img-fluid rounded-5"
-                        alt="exemplo" title="Pokemon FireRed- CC0 Domínio Público /Game Freak" 
-                            loading="lazy">
-                    </div>
+          
+              <div class="row justify-content-md-center">
+           <!-- 1-->
+           <div class="col-md-4">
+            <!-- Botão com a imagem -->
+            <button type="button" class="btn btn-dark" id="botaoImagemGo" style="width: 94%;">
+              <img src="go.png" 
+                   alt="exemplo" title="Pokémon GO logo - CC0 Domínio Público / Nintendo Vetor"
+                   class="img-fluid rounded-5" 
+                   style="width: 100%; max-width: 1320px;" 
+                   loading="lazy">
+            </button>
+            <!-- Texto que aparecerá abaixo -->
+            <p id="textoGo" style="display:none;">Pokémon GO é um jogo eletrônico free-to-play de realidade aumentada voltado para smartphones. O jogo é desenvolvido e publicado pela Niantic, Inc., em colaboração com a Nintendo e a The Pokémon Company para as plataformas iOS e Android.[2][3] O jogo foi inicialmente lançado em julho de 2016 para alguns países, eventualmente expandindo para o resto do mundo   fonte: wikipedia <a href="https://pt.wikipedia.org/wiki/Pok%C3%A9mon_GO" target="_blank">ver site</a></p>
+          </div>
+          
+          
+          <!-- 2-->
+                <div class="col-md-4">
+                  <!-- Botão com a imagem -->
+                  <button type="button" class="btn btn-dark" id="botaoImagemFire">
+                    <img src="fire.png" class="img-fluid rounded-5"
+                         alt="exemplo" title="Pokemon FireRed- CC0 Domínio Público /Game Freak"
+                         loading="lazy">
+                  </button>
+                  <!-- Texto que aparecerá abaixo -->
+                  <p id="textoFire" style="display:none;">Pokémon FireRed é um jogo eletrônicos de RPG de 2004 recriado pelo Pokémon Red e Blue de Game Boy em 1996. Eles foram desenvolvidos pela Game Freak e publicados pela The Pokémon Company e pela Nintendo para o Game Boy Advance. FireRed e LeafGreen foram lançados pela primeira vez no Japão em janeiro de 2004  fonte: wikipedia <a href="https://pt.wikipedia.org/wiki/Pok%C3%A9mon_FireRed_e_LeafGreen" target="_blank">ver site</a></p>
                 </div>
+              </div>
             </div>
-        </section>
+          </section>
+          <!-- 3-->
         <section id="exemplos">
             <div class="container p-3 mt-3 fundo-exemplos">
-
-                <div class="row justify-content-md-center">
-                    <div class="col-md-4">
-                        <img src="diamond.png"
-                        alt="exemplo" title="Pokémon Diamant Étincelant Logo Royaume-Uni- CC0 Domínio Público /A Companhia Pokémon" 
-                            class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="Leaf.svg" class="img-fluid rounded-5"
-                        alt="exemplo" title=" Pokemon LeafGreen- CC0 Domínio Público /Game Freak" 
-                            loading="lazy">
-                    </div>
+              <div class="row justify-content-md-center">
+                <div class="col-md-4">
+                  <!-- Botão com a imagem -->
+                  <button type="button" class="btn btn-dark" id="botaoImagem" data-bs-toggle="modal" data-bs-target="#modal1">
+                    <img src="diamond.png"
+                         alt="exemplo" title="Pokémon Diamant Étincelant Logo Royaume-Uni- CC0 Domínio Público /A Companhia Pokémon" 
+                         class="img-fluid rounded-5" loading="lazy">
+                  </button>
+                  <!-- Texto que aparecerá abaixo do botão -->
+                  <p id="textoAparecer" style="display:none;">pokémon diamond é um jogo eletrônicos de RPG de 2006, desenvolvidos pela Game Freak, publicados pela The Pokémon Company e Nintendo para consola portátil Nintendo DS. São as primeiras parcelas da quarta geração da série de jogos eletrônicos Pokémon. Eles foram lançados pela primeira vez no Japão em 28 de setembro de 2006 e na América do Norte, Austrália e Europa em 2007  fonte: wikipedia <a href="https://pt.wikipedia.org/wiki/Pok%C3%A9mon_Diamond_e_Pearl" target="_blank">ver site</a></p>
                 </div>
-            </div>
-        </section>
+              
+                <!-- 4-->
+                <div class="col-md-4">
+                    <!-- Botão com a imagem -->
+                    <button type="button" class="btn btn-dark" id="botaoImagemLeaf" style="width: 114%;">
+                      <img src="Leaf.svg" class="img-fluid rounded-5"
+                           alt="exemplo" title="Pokemon LeafGreen- CC0 Domínio Público /Game Freak"
+                           style="width: 100%; max-width: 1080px;" 
+                           loading="lazy">
+                    </button>
+                    <!-- Texto que aparecerá abaixo -->
+                    <p id="textoLeaf" style="display:none;">Pokémon LeafGreen é um jogo eletrônicos de RPG de 2004 recriado pelo Pokémon Red e Blue de Game Boy em 1996. Eles foram desenvolvidos pela Game Freak e publicados pela The Pokémon Company e pela Nintendo para o Game Boy Advance. FireRed e LeafGreen foram lançados pela primeira vez no Japão em janeiro de 2004 fonte: wikipedia <a href="https://pt.wikipedia.org/wiki/Pok%C3%A9mon_FireRed_e_LeafGreen" target="_blank">ver site</a></p>
+                  </div>
+                  
 
+                  
+          </section>
+          
         <section id="contato">
             <div class="container p-5 d-flex justify-content-center">
                 <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
-                    <h2 class="mb-3">Entre em contato</h2>
+                  <p>em caso de duvidas</p>
+                    <h2 class="mb-3">Entre em contato aqui:</h2>
                     <form>
                         <div class="form-group mb-3">
-                            <label for="nome">Nome</label>
+                            <label for="nome">Digite qual é seu nome</label>
                             <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu nome completo">
+                                placeholder="Digite qual é seu nome">
                         </div>
                         <div class="form-group mb-3">
-                            <label for="email">Email</label>
+                            <label for="email">Digite seu email</label>
                             <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
                                 placeholder="Digite seu email">
                         </div>
                         <div class="form-group mb-3">
-                            <label for="mensagem">Mensagem</label>
+                            <label for="mensagem">Escreva qual a sua duvida</label>
                             <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
-                                placeholder="Escreva sua mensagem"></textarea>
+                                placeholder="Escreva qual a sua duvida"></textarea>
                         </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao">Enviar
-                                mensagem</button>
-                        </div>
+                      
+                           
+
+
+
+                          <button type="button" class="btn btn-primary btn-lg rounded-pill tamanho-botao" id="enviarMensagem">
+                            Enviar mensagem
+                        </button>
+                        
+
+<div id="mensagemConfirmacao" class="mt-2 text-success fw-bold"></div>
+
+
+
+
+
+
+                        
                     </form>
                 </div>
             </div>
@@ -161,8 +229,13 @@
         <i class="bi bi-tiktok"></i>
        
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
     <script src="script.js"></script>
 
 </body>
 
 </html>
+
+
+
+

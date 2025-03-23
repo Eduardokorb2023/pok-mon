@@ -67,6 +67,13 @@ document.addEventListener('DOMContentLoaded', function() {
   botaoDeAcessibilidade.addEventListener('click', function() {
     botaoDeAcessibilidade.classList.toggle('rotacao-botao');
     opcoesDeAcessibilidade.classList.toggle('apresenta-lista');
+
+    
+
+const botaoSelecionado = botaoDeAcessibilidade.getAttribute('aria-expanded') === 'true';
+botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado)
+
+
   });
 
   // Aumentar o tamanho da fonte
@@ -83,6 +90,91 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Mudar a cor de fundo
   mudaCorFundoBotao.addEventListener('click', function() {
-    document.body.style.backgroundColor = document.body.style.backgroundColor === 'white' ? '' : 'black';
+    // Troca a cor do fundo
+    if (document.body.style.backgroundColor === 'black') {
+      document.body.style.backgroundColor = 'white';  // Cor de fundo branca
+    } else {
+      document.body.style.backgroundColor = 'black';  // Cor de fundo preta
+    }
+  
+    // Troca a cor do texto no corpo
+    if (document.body.style.color === 'white') {
+      document.body.style.color = 'black';  // Cor do texto preta
+    } else {
+      document.body.style.color = 'white';  // Cor do texto branca
+    }
+  
+    // Troca a cor do texto nos links da navegação
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      if (link.style.color === 'white') {
+        link.style.color = 'black';  // Cor do texto dos links preta
+      } else {
+        link.style.color = 'white';  // Cor do texto dos links branca
+      }
+    });
   });
+  
+    
+    
+  });
+
+// Seleciona o botão e o elemento de texto
+const botaoImagem = document.getElementById('botaoImagem');
+const textoAparecer = document.getElementById('textoAparecer');
+
+// Adiciona o evento de clique
+botaoImagem.addEventListener('click', function() {
+  // Alterna a visibilidade do texto abaixo
+  if (textoAparecer.style.display === 'none' || textoAparecer.style.display === '') {
+    textoAparecer.style.display = 'block';  // Exibe o texto
+  } else {
+    textoAparecer.style.display = 'none';  // Oculta o texto novamente
+  }
+});
+
+// Seleciona os botões e os elementos de texto
+const botaoImagemGo = document.getElementById('botaoImagemGo');
+const textoGo = document.getElementById('textoGo');
+
+const botaoImagemFire = document.getElementById('botaoImagemFire');
+const textoFire = document.getElementById('textoFire');
+
+// Adiciona os eventos de clique para cada botão de imagem
+botaoImagemGo.addEventListener('click', function() {
+  if (textoGo.style.display === 'none' || textoGo.style.display === '') {
+    textoGo.style.display = 'block';  // Exibe o texto sobre Pokémon GO
+  } else {
+    textoGo.style.display = 'none';  // Oculta o texto sobre Pokémon GO
+  }
+});
+
+botaoImagemFire.addEventListener('click', function() {
+  if (textoFire.style.display === 'none' || textoFire.style.display === '') {
+    textoFire.style.display = 'block';  // Exibe o texto sobre Pokémon FireRed
+  } else {
+    textoFire.style.display = 'none';  // Oculta o texto sobre Pokémon FireRed
+  }
+});
+
+// Seleciona o botão e o elemento de texto
+const botaoImagemLeaf = document.getElementById('botaoImagemLeaf');
+const textoLeaf = document.getElementById('textoLeaf');
+
+// Adiciona o evento de clique para o botão da imagem
+botaoImagemLeaf.addEventListener('click', function() {
+  if (textoLeaf.style.display === 'none' || textoLeaf.style.display === '') {
+    textoLeaf.style.display = 'block';  // Exibe o texto sobre Pokémon LeafGreen
+  } else {
+    textoLeaf.style.display = 'none';  // Oculta o texto sobre Pokémon LeafGreen
+  }
+});
+
+ScrollReveal().reveal('#inicio', { delay: 350 });
+ScrollReveal().reveal('#poké', { delay: 400 });
+ScrollReveal().reveal('#contato', { delay: 500 });
+ScrollReveal().reveal('#exemplos', { delay: 350 });
+
+document.getElementById("enviarMensagem").addEventListener("click", function () {
+  document.getElementById("mensagemConfirmacao").innerText = "Mensagem enviada!";
 });
